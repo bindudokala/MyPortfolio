@@ -1,0 +1,19 @@
+{
+    "name": "bindumadhavidokala/bindu-madhavi-dokala-portfolio",
+    "description": "This is a portfolio of Bindu Madhavi Dokala",
+    "type": "composer-plugin",
+    "autoload": {
+        "psr-4": {
+            "Bindumadhavidokala\\BinduMadhaviDokalaPortfolio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bindu Madhavi Dokala"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "sendgrid/sendgrid": "^8.1"
+    }
+}

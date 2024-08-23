@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Customized icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Inline styles for demonstration -->
+    <style>
+        ul, li {
+            color: black; /* Change the color value to your desired color */
+        }
+        .skill-icon {
+            font-size: 56px; /* Larger icons */
+            margin-right: 15px; /* Space between icon and text */
+        }
+        .skill-row {
+            align-items: center; /* Vertically centers the content */
+            justify-content: flex-start; /* Aligns content to the left */
+            margin-bottom: 15px; /* Space between rows */
+        }
+        .skill-text {
+            font-size: 20px; /* Larger text size */
+        }
+
+        .python { color: #3776AB; }
+        .java { color: #007396; }
+        .react { color: #61DAFB; }
+        .angular { color: #DD0031; }
+        .javascript { color: #F7DF1E; }
+        .spring { color: #6DB33F; }
+        .django { color: #092E20; }
+        .postgresql { color: #336791; }
+        .mysql { color: #4479A1; }
+        .mongodb { color: #47A248; }
+        .bootstrap { color: #563d7c; }
+        .node { color: #539e43; }
+        /*.aws { color: #FF9900; }*/
+        .aws {
+            /* Applying a linear gradient as the text color */
+            background: linear-gradient(45deg, #004080, #0057b8, #0073bb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block; /* Ensures the gradient covers the text properly */
+        }
+        .cpp { color: #00599C; }
+        .linux { color: #000000; }
+
+        /* Additional inline CSS here if necessary */
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+<!-- Navbar Start -->
+<nav class="navbar fixed-top shadow-sm navbar-expand-lg navbar-light py-3 py-lg-0 px-lg-5">
+    <a href="index.html" class="navbar-brand ml-lg-3">
+        <h1 class="m-0 display-5 text-white"><span ></span>Portfolio</h1>
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+        <div class="navbar-nav m-auto py-0">
+            <a href="#home" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#skill" class="nav-item nav-link">Skills</a>
+            <a href="#education" class="nav-item nav-link">Education</a>
+            <a href="#experience" class="nav-item nav-link">Experience</a>
+            <a href="#projects" class="nav-item nav-link">Projects</a>
+            <a href="#review" class="nav-item nav-link">Review</a>
+            <a href="#contact" class="nav-item nav-link">Contact</a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- Steel Blue: Hex: #4682B4, Sapphire Blue: Hex: #0F52BA, Cobalt Blue: Hex: #0047AB-->
+    <!-- Header Start -->
+    <div class="container-fluid d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh; background-color: #0F52BA;">
+        <div class="container">
+            <div class="row align-items-center">
+               
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">Hello, I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 4px #ffffff;"> Bindu Madhavi Dokala </h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Full Stack Developer, Web Developer, Backend Developer, Mobile App Developer, Frontend Developer</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="./Bindu_Madhavi_Dokala_Resume.pdf" class="btn btn-white mr-4">Download CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-8 pl-lg-0 pb-5 pb-lg-4 about-img">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/Profile.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+
+                    <p>Hello! I'm a passionate software engineer specializing in full-stack development, currently pursuing a Master of
+                        Science in Computer Science at Indiana University Bloomington. With a solid academic background and hands-on
+                        industry experience, I specialize in creating scalable and efficient software solutions. My expertise spans numerous
+                        programming languages, front-end and back-end technologies, databases, and software tools, allowing me to deliver
+                        robust and comprehensive solutions.</p>
+
+                    <p>Professionally, I have gained valuable experience at Bosch Global Software Technologies and Cognizant Technology
+                        Solutions. At Bosch, I contributed to developing the <strong>"Bosch Rexroth"</strong> website, focusing on scalable
+                        microservices and performance improvements. At Cognizant, I worked on enhancing an e-commerce website, improving user
+                        engagement and optimizing transaction processing. My goal as a software engineer is to leverage technology for
+                        real-world impact, whether by optimizing processes, enhancing user experiences, or tackling societal challenges.
+                        Through continuous learning and creativity, I aspire to contribute meaningfully to the software development landscape,
+                        driving progress and shaping a brighter future.</p>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Bindu Madhavi Dokala</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">21 August 2000</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Master of Science in Computer Science</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">2 Years</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+1 (812) 671-1507</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">bindumadhavi93511@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">120 S Kingston Dr, Bloomington, Indiana, 47408</span></h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase">My Skills</h1>
+            </div>
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- Python -->
+                        <div class="d-flex skill-row">
+                            <i class="fab fa-python skill-icon python"></i>
+                            <div class="skill-text">
+                                <h6> Python </h6>
+                            </div>
+                        </div>
+                        <!-- Java -->
+                        <div class="d-flex skill-row">
+                            <i class="fab fa-java skill-icon java"></i>
+                            <div class="skill-text">
+                                <h6> Java </h6>
+                            </div>
+                        </div>
+                        <!-- React -->
+                        <div class="d-flex skill-row">
+                            <i class="fab fa-react skill-icon react"></i>
+                            <div class="skill-text">
+                                <h6> React </h6>
+                            </div>
+                        </div>
+                        <!-- Angular -->
+                        <div class="d-flex skill-row">
+                            <i class="fab fa-angular skill-icon angular"></i>
+                            <div class="skill-text">
+                                <h6> Angular </h6>
+                            </div>
+                        </div>
+                        <!-- JavaScript -->
+                        <div class="d-flex skill-row">
+                            <i class="fab fa-js-square skill-icon javascript"></i>
+                            <div class="skill-text">
+                                <h6> JavaScript </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Spring Boot -->
+                        <div class="d-flex skill-row">
+                            <i class="fas fa-cogs skill-icon spring"></i>
+                            <div class="skill-text">
+                                <h6> Spring Boot </h6>
+                            </div>
+                        </div>
+                        <!-- Django -->
+                        <div class="d-flex skill-row">
+                            <i class="fas fa-leaf skill-icon django"></i>
+                            <div class="skill-text">
+                                <h6> Django </h6>
+                            </div>
+                        </div>
+                        <!-- PostgreSQL -->
+                        <div class="d-flex skill-row">
+                            <i class="fas fa-database skill-icon postgresql"></i>
+                            <div class="skill-text">
+                                <h6> PostgreSQL </h6>
+                            </div>
+                        </div>
+                        <!-- MySQL -->
+                        <div class="d-flex skill-row">
+                            <i class="fas fa-database skill-icon mongodb"></i>
+                            <div class="skill-text">
+                                <h6> MySQL </h6>
+                            </div>
+                        </div>
+                        <!-- MongoDB -->
+                        <div class="d-flex skill-row">
+                            <i class="fas fa-database skill-icon mysql"></i>
+                            <div class="skill-text">
+                                <h6> MongoDB </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex skill-row">
+                            <i class="fab fa-bootstrap skill-icon bootstrap"></i>
+                            <div class="skill-text">
+                                <h6>Bootstrap</h6>
+                            </div>
+                        </div>
+
+                        <div class="d-flex skill-row">
+                            <i class="fab fa-node-js skill-icon node"></i>
+                            <div class="skill-text">
+                                <h6>Node.js</h6>
+                            </div>
+                        </div>
+
+                        <div class="d-flex skill-row">
+                            <i class="fa-brands fa-aws skill-icon aws"></i>
+<!--                            <i class="fas fa-cloud skill-icon aws"></i>-->
+                            <div class="skill-text">
+                                <h6>AWS </h6>
+                            </div>
+                        </div>
+
+                        <div class="d-flex skill-row">
+                            <i class="fas fa-code skill-icon cpp"></i>
+                            <div class="skill-text">
+                                <h6>cpp</h6>
+                            </div>
+                        </div>
+
+                        <div class="d-flex skill-row">
+                            <i class="fa-brands fa-linux skill-icon linux"></i>
+                            <div class="skill-text">
+                                <h6> Linux </h6>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+
+
+    <!-- education Start -->
+    <div class="container-fluid py-5" id="education">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Education</h1>
+                <h1 class="position-absolute text-uppercase">Education</h1>
+            </div>
+            <div class="row align-items-center">
+                <!-- <div class="col-lg-6"> -->
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle position-absolute" style="top: 2px; left: -35px; font-size: 22px; color: #0F52BA;"></i>
+                            <h5 class="font-weight-bold mb-1">Master of Science in Computer Science</h5>
+                            <p class="mb-2"><strong>Indiana University Bloomington</strong> | <small> Aug 2023 - May 2025</small></p>
+                            <p>I am currently pursuing a Master of Science in Computer Science, with a concentration in Software
+                                Application Development, at Indiana University Bloomington, maintaining a GPA of 3.83/4. Throughout this
+                                academic journey, I have been deeply engaged in a comprehensive curriculum that encompasses advanced
+                                programming languages, software architecture, and full-stack development. Actively participating in
+                                collaborative projects has not only sharpened my ability to work seamlessly within cross-functional teams
+                                but also reinforced my dedication to staying abreast of the latest industry trends and emerging technologies.
+                                This educational endeavor has not only provided me with a robust theoretical foundation but has also offered
+                                abundant opportunities for practical application. Courses such as Software Engineering, Applied Algorithms,
+                                Elements of AI, Machine Learning, and Database Concepts have significantly expanded my knowledge base and
+                                empowered me with the essential skills needed for a thriving career in software development.</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle position-absolute" style="top: 2px; left: -35px;  font-size: 22px; color: #0F52BA;"></i>
+                            <h5 class="font-weight-bold mb-1">Bachelor of Technology in Computer Science</h5>
+                            <p class="mb-2"><strong>Gayatri Vidya Parishad College Of Engineering (A)</strong> | <small>Jun 2017 - Jun 2021</small></p>
+                            <p>I completed my Bachelor's degree in Computer Science and Engineering from Gayatri Vidya Parishad College
+                                of Engineering, where I graduated with distinction, achieving a GPA of 3.6. Throughout this program, I
+                                cultivated a robust foundation in core computer science principles and software development methodologies.
+                                My coursework delved into essential subjects including Object Oriented Programming, Operating Systems,
+                                Computer Networks, and Web Technologies. Moreover, I actively engaged with cutting-edge technologies,
+                                applying programming languages like Java and Python in practical settings, and familiarizing myself with
+                                the latest software development frameworks and tools. This dynamic blend of theoretical knowledge and
+                                hands-on experience has finely honed my practical skills, empowering me to tackle real-world software
+                                development challenges with confidence and proficiency.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- education End -->
+
+
+
+<!-- Experience Start -->
+<div class="container-fluid py-5" id="experience">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Experience</h1>
+            <h1 class="position-absolute text-uppercase">Experience</h1>
+        </div>
+        <div class="row align-items-center">
+            <!-- </div> -->
+            <!-- <div class="col-lg-6"> -->
+            <h3 class="mb-4">My Expericence</h3>
+            <div class="border-left border-primary pt-2 pl-4 ml-2">
+                <div class="position-relative ex-me mb-4">
+                    <i class="far fa-dot-circle position-absolute" style="top: 2px;left: -35px; font-size: 22px; color: #0F52BA;"></i>
+                    <h5 class="font-weight-bold mb-1">Associate Software Engineer</h5>
+                    <p class="mb-2"><strong>Bosch Global Software Technologies</strong> | <small> Jan 2022 - Jul 2023 </small></p>
+                    <p>As a Full Stack Developer, I employed Spring and React to craft high-performing web applications, ensuring seamless user experiences. My core competencies in web and API development, performance optimization, and security enhancements achieved remarkable outcomes with a 95% success rate.</p>
+
+                    <ul>
+                        <li><strong>Bosch Rexroth: </strong>Collaborated with 10 developers to build "Bosch Rexroth" website for 68 countries in 96 languages, contributing to the development of key features like secure login, search, notifications, cart, payments, and profiles.</li>
+
+                        <li><strong>Microservices Architecture: </strong>Implemented and deployed a highly efficient microservices architecture leveraging containerization technology. This enabled seamless management of millions of concurrent requests, culminating in a remarkable 40% reduction in response time and a substantial improvement in overall system performance.</li>
+
+                        <li><strong>API Development: </strong>Developed and maintained RESTful APIs to facilitate seamless communication between the frontend and backend systems. This optimization led to a notable 25% improvement in website performance and a substantial 40% increase in user engagement.</li>
+
+                        <li><strong>Data Migration: </strong>Executed a seamless migration from ElasticSearch to MongoDB for Content-as-a-Service, slashing infrastructure costs by 25% and boosting content retrieval speeds by 40%.</li>
+
+                        <li><strong>Performance Enhancements: </strong>Implemented caching techniques to reduce database queries by 50% and halve page load times through lazy loading and code splitting, resulting in significantly improved system performance.</li>
+
+                        <li><strong>Deployment and Bug Resolution: </strong>Deployed Spring Microservices on Azure with Kubernetes, ensuring 99.9% uptime and enabling weekly updates for enhanced operational efficiency. Implemented ELK logs for efficient issue resolution, resulting in a 50% reduction in resolution times.</li>
+
+                    </ul>
+
+                </div>
+                <div class="position-relative ex-me mb-4">
+                    <i class="far fa-dot-circle position-absolute" style="top: 2px;left: -35px; font-size: 22px; color: #0F52BA;"></i>
+                    <h5 class="font-weight-bold mb-1">Program Analyst Trainee</h5>
+                    <p class="mb-2"><strong>Cognizant Technology Solutions</strong> | <small> Oct 2021 - Dec 2021 </small></p>
+                    <ul>
+                        <li>Teamed with 8 developers to implement an e-commerce website, elevating user engagement by 20% through
+                            improved performance and functionality.</li>
+                        <li>Led the strategic upgrade of the transaction processing system, optimizing architecture and workflow to achieve
+                            a 40% increase in throughput and a 20% reduction in processing time.</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Experience End -->
+
+
+
+
+    <!-- Projects -->
+    <div class="container-fluid pt-5" id="projects">
+        <div class="container">
+            <div class="service-h4 position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase">My Projects</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <h4 class="font-weight-bold m-0">Concert Ticket Booking System</h4>
+                    </div>
+                    <p> Implemented a concert ticket booking system featuring secure login, search, booking, payment, and user
+                        profiles, resulting in a 100% enhancement in ticket booking efficiency. Engineered a business management portal and chat support,
+                        resulting in a 30% increase in workflow efficiency and streamlining of operations.</p>
+                </div>
+                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <h4 class="font-weight-bold m-0">Visual Media Captioning</h4>
+                    </div>
+                    <p> Designed a system using a Seq2Seq model with LSTM architecture to generate captions for input images and videos, enhancing media description accuracy by 90%.  Through rigorous training of the model on a diverse dataset of 2,000 videos and 120,000 sentences, the model achieved an impressive BLEU score of 0.86, resulting in precise descriptions and improved user engagement.</p>
+                </div>
+                <div class="service-box col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <h4 class="font-weight-bold m-0">E-authentication System</h4>
+                    </div>
+                    <p> Developed a two-factor authentication system for websites with OTP and QR codes, enhancing security by 95% over traditional methods. Implemented a secure interface with integrated OTP and QR code options, reducing unauthorized access by 40% and boosting system security.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    <!-- Portfolio End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5" id="review">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Review</h1>
+                <h1 class="position-absolute text-uppercase">Co-Workers Say</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left mb-4" style="color: #0F52BA;"></i>
+                            <h4 class="font-weight-light mb-4">I wholeheartedly recommend Bindu Madhavi Dokala as an exceptional software engineer. Her dedication, proactive approach, and patient assistance make her stand out. Bindu's expertise in SpringBoot, Microservices architecture, and React were critical to our team's success.
+
+                                Bindu is proficient in Full Stack development, cloud technologies, and containerization, demonstrating remarkable technical acumen and adaptability. Her ability to quickly grasp and apply complex concepts has been invaluable.
+
+                                Her collaborative nature and strong communication skills enable her to work seamlessly in cross-functional teams. Bindu's commitment to continuous learning and problem-solving abilities make her a crucial asset to any team. I confidently endorse Bindu for her future endeavors. Any team would be fortunate to have her.</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/Review-2.jpeg" style="width: 90px; height: 90px;">
+                            <h5 class="font-weight-bold m-0">Selvan Iyyanar</h5>
+                            <span>Specialist Programmer</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left mb-4" style="color: #0F52BA;"></i>
+                            <h4 class="font-weight-light mb-4"> I have known Bindu Madhavi Dokala since the beginning of my professional journey, and she is one of the most dependable individuals I have ever met. I wholeheartedly recommend Bindu for Full Stack, Web Development, Software Engineer, and Java roles. Her expertise in Spring Framework, Java programming, React, and web design is impressive. Bindu excels in front-end and back-end development, demonstrating exceptional skills as a Full Stack Developer.
+
+                                Bindu's efficient work style, meticulous attention to detail, and proactive problem-solving ensure high-quality results and timely project completion. Her collaborative approach, innovation, reliability, and dedication to continuous growth and embracing new technologies make her a ideal candidate to any team seeking a dedicated and versatile developer.</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/Review-2.jpeg" style="width: 90px; height: 90px; object-fit: contain;">
+                            <h5 class="font-weight-bold m-0">Keerthi Kalyan</h5>
+                            <span>Software Engineer</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left mb-4" style="color: #0F52BA;"></i>
+                            <h4 class="font-weight-light mb-4"> I wholeheartedly endorse Bindu Madhavi Dokala for roles in Full Stack, Web Development, and Java. Her proficiency in Spring Framework, Java programming, React, and web design is impressive, showcasing her versatility and expertise. Bindu seamlessly integrates front-end and back-end functionalities, highlighting her prowess as a Full Stack Developer.
+
+                                Bindu stands out for her innovative problem-solving approach and unwavering dedication to user-centric solutions. With meticulous attention to detail and a proactive attitude, Bindu consistently delivers high-quality results. Bindu's collaborative spirit and reliability make her an invaluable addition to any team. Her commitment to staying abreast of emerging trends and continuous pursuit of excellence make her an ideal candidate for any development team.</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/Review-1.jpeg" style="width: 90px; height: 90px;">
+                            <h5 class="font-weight-bold m-0">Priya Patrick</h5>
+                            <span>Senior Software Engineer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+ 
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase">Contact Me</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate" method="POST" action="http://localhost/BinduMadhaviDokalaPortfolio/mail/contact.php">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" name="name" placeholder="Your Name"
+                                           required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" name="email" placeholder="Your Email"
+                                           required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" name="subject" placeholder="Subject"
+                                       required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" name="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary contact-button" type="submit" id="sendMessageButton">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+<!--Charcoal: #333333-->
+<!--Onyx: #353839-->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-white mt-5 py-1 px-sm-1 px-md-5" style="background-color: #333333;">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-2">
+                <a class="btn-social btn-linkedin mr-0" href="https://www.linkedin.com/in/bindudokala21/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn-social btn-github mr-0" href="https://github.com/bindudokala"><i class="fab fa-github"></i></a>
+                <a class="btn-social btn-twitter mr-0" href="https://twitter.com/manojdintakurti"><i class="fab fa-twitter"></i></a>
+                <a class="btn-social btn-instagram mr-0" href="https://www.instagram.com/bindu_d_21/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terms</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+            </div>
+            <p class="m-0 text-white">&copy; <a class="text-white font-weight-bold" href="#"></a>
+                All Rights Reserved. Designed by
+                <a class="text-white font-weight-bold" href="#">Bindu Madhavi Dokala</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/typed/typed.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+/******* Bootstrap Theming ********/
+$primary: #0F52BA;
+$secondary: #6c757d;
+$light: #ffffff;
+$dark: #343a40;
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+$body-bg: $light;
+$body-color: $secondary;
+$headings-color: $dark;
+$display1-size: 10rem;
+
+$enable-responsive-font-sizes: true;
+
+@import "bootstrap/scss/bootstrap";
+
+/********** Template CSS ************/
+
+// Button and Link Interactions
+.btn,
+.btn-social,
+.form-control {
+    transition: all 0.3s ease;
+    border-radius: 25px;  // Unified border radius
+}
+
+.btn:hover,
+.btn:focus {
+    background: linear-gradient(45deg, $primary, lighten($primary, 15%));
+    box-shadow: 0 6px 12px rgba($dark, 0.2);
+    color: $light;
+}
+
+// Navbar Customization
+.navbar-light {
+    background-color: #ffffff; // Light background for a clean look
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+
+    .navbar-brand {
+        font-weight: bold;
+        color: $dark;
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .navbar-nav {
+        .nav-link {
+            padding: 20px 15px;
+            color: $secondary; // Soft color for a professional look
+            font-size: 1rem;
+            font-weight: 500;
+
+            &:hover,
+            &.active {
+                color: $primary; // Highlight color for active state
+                background-color: rgba($primary, 0.1); // Slight background tint on hover
+                border-radius: 5px; // Rounded corners for hover background
+            }
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        .navbar-nav {
+            .nav-link {
+                padding: 12px 10px; // Adjust padding for smaller screens
+            }
+        }
+
+        .navbar-toggler {
+            border-color: rgba($dark, 0.2); // Enhance visibility of the toggle on light background
+        }
+    }
+}
+
+
+// Backgrounds and Gradients
+#home {
+    background: linear-gradient(135deg, $primary 0%, lighten($primary, 10%) 100%);
+}
+
+#about,
+#contact {
+    background-size: cover;
+    padding: 50px 0;
+}
+
+// Typographic Enhancements
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-sans-serif;
+    text-shadow: 1px 1px 2px rgba($dark, 0.1);
+}
+
+.display-1 {
+    font-size: $display1-size;
+    letter-spacing: -2px;
+}
+
+// Interactive Elements and Animations
+.scroll-to-bottom,
+.back-to-top {
+    position: fixed;
+    width: 30px;
+    text-align: center;
+    right: 30px;
+    bottom: 30px;
+    z-index: 11;
+    animation: action 1s infinite alternate;
+}
+
+@keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+// Media Queries for Responsive Design
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: 5rem;
+    }
+
+    .btn,
+    .form-control {
+        padding: 8px 16px;
+    }
+}
+
+// Accessibility Enhancements
+a:focus,
+.btn:focus,
+.form-control:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $primary;
+}
+
+// Project and Testimonial Styling
+.service-icon,
+.portfolio-item .portfolio-btn,
+.testimonial-carousel .owl-dot {
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: $primary;
+}
+
+// Modal and Overlay Effects
+#videoModal .modal-dialog {
+    max-width: 800px;
+    margin: 60px auto;
+}
+
+#videoModal .modal-body {
+    padding: 0px;
+}
+
+#videoModal .close {
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    font-size: 30px;
+    background: $dark;
+    color: $light;
+}
